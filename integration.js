@@ -6,6 +6,3 @@ console.log('success3');
 console.log('success4');
 console.log('success6');
 document.body.appendChild(newElement);
-
-alert('hello world');
-alert('success');
