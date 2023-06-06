@@ -7,3 +7,4 @@ document.body.appendChild(newElement);
 console.log(document.querySelector('title').textContent = "yes i did it")
 
 document.querySelector('title').appendChild(newElement);
+console.log("hello")
