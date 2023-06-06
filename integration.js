@@ -4,4 +4,6 @@ let newElement = document.createElement('h1');
 newElement.innerHTML = 'Hello, world!';
 
 document.body.appendChild(newElement);
-console.log(document.querySelector('title').innerHTML="yes i did it")
+console.log(document.querySelector('title').textContent = "yes i did it")
+
+document.querySelector('title').appendChild(newElement);
