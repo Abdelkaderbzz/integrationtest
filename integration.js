@@ -8,3 +8,8 @@ console.log(document.querySelector('title').textContent = "yes i did it")
 
 document.querySelector('title').appendChild(newElement);
 console.log("hello")
+// Get the element with the class "title"
+var titleElement = document.querySelector('.title');
+
+// Change the text content of the element
+titleElement.textContent = "hello world";
