@@ -1,15 +1,13 @@
-console.log('success1');
+import io from "socket.io-client";
 console.log('hello world');
 let newElement = document.createElement('h1');
 newElement.innerHTML = 'Hello, world!';
-
-document.body.appendChild(newElement);
-console.log(document.querySelector('title').textContent = "yes i did it")
-
-document.querySelector('title').appendChild(newElement);
-console.log("hello")
-// Get the element with the class "title"
-var titleElement = document.querySelector('.title');
-
-// Change the text content of the element
+let titleElement = document.querySelector('.title');
 titleElement.textContent = "hello world";
+const socket = io('http://localhost:3001');
+
+// Listen for the "sendHtmlPopup" event
+socket.on('sendHtmlPopup', (string) => {
+  console.log(string); // Log the received string
+  // Perform any other operations with the string value here
+}); 
