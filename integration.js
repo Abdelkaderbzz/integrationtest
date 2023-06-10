@@ -2,9 +2,10 @@
 const App = () =>
 {
   console.log("hello world")
-  const scriptTag = document.querySelector('taki-popup');
+const scriptTag = document.querySelector('script[token]');
 const token = scriptTag.getAttribute('token');
 console.log(token);
+
   const popupElement = document.createElement('div');
   document.body.appendChild(popupElement);
   const setPopup = (string) => {
