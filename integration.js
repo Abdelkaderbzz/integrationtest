@@ -5,7 +5,8 @@ const App = () =>
 const scriptTag = document.querySelector('script[token]');
 const token = scriptTag.getAttribute('token');
 console.log(token);
-
+const domain = window.location.hostname;
+console.log(domain);
   const popupElement = document.createElement('div');
   document.body.appendChild(popupElement);
   const setPopup = (string) => {
