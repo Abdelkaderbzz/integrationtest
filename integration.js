@@ -14,7 +14,7 @@ console.log(domain);
   };
   const socket = io('https://popupbackend.onrender.com');
   socket.emit('sendTokenAndDomain',{domainName:domain,accessToken:token})
-
+  console.log("emited")
   socket.on('receiveMessage', (string) => {
     console.log('Message from the server', string);
     setPopup(string);
